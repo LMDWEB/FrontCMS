@@ -1,0 +1,176 @@
+.comments {
+    span {
+        color: #000;
+    }
+
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #EEE;
+        height: 82px;
+        padding: 10px 20px;
+
+        .profile-user {
+            display: flex;
+            flex: 3;
+
+            .photo-user {
+                display: inline-block;
+                padding: 0 10px;    
+                border: 1px solid;
+                margin-right: 20px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+    
+            a {
+                &:hover {
+                    border-color: purple;
+                }
+            }
+    
+            img {
+                height: 60px;
+            }
+    
+            .pseudo {
+                font-weight: bold;
+            }
+    
+            span {
+                display: block
+            }
+        }
+    
+        .profile-info {
+            flex: 1;
+
+            .date {
+                font-style: italic;
+                font-size: 12px;
+            }
+        }
+
+        .info-user {
+            display: inline-block;
+
+            .role {
+                color: #aaa;
+            }
+        }
+    }
+
+    .comment {
+        padding: 20px; 
+        border-bottom: 1px solid #EEE;
+    }
+
+    .actions {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        color: #000;
+
+        div {
+            flex: 1;
+            text-align: center;
+        }
+    }
+}
+
+.replycomments {
+    display: flex;
+    border-top: 2px solid #EEE;
+
+    .profile {
+        flex: 1;
+        height: auto;
+        border-bottom: 0;
+        padding-top: 20px;
+
+        .profile-user {
+            display: block;
+        }
+
+        .photo-user {
+            max-height: 50px;
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .comment {
+        flex: 5;
+
+        .date {
+            font-size: 11px;
+            font-style: italic;
+            float: right
+            ;
+        }
+    }
+}
+
+.player-profile {
+    text-align: center;
+
+    img {
+        max-height: 200px;
+    }
+}
+
+.news {
+    .category {
+        color: $color-primary;
+    }
+
+    .title {
+        color: $color-secondary;
+    }
+
+    img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .titleNews {
+        padding: 20px 0;
+        font-weight: bold;
+    }
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+
+    .news {
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+    }
+}
+
+.player {
+    .dashboard-container {
+        margin-left: 460px;
+    }
+}
+
+main.App-content {
+    color: #000;
+    margin-top: 90px;
+}
+.dashboard-container{
+    .CircularProgressbar {
+        width: 50px;
+        float: right;
+    }
+}
+
+.slider-wrapper {
+    h1 a {
+        color: #FFF;
+    }
+}
