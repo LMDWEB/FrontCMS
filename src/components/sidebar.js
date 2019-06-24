@@ -25,19 +25,19 @@ export default class Sidebar extends React.Component {
                         </Link>
                     </li>
                     <li className="normal-item-pro">
-                        <Link to="dashboard-new-arrivals.html">
+                        <Link to="/championship">
                         <span className="far fa-calendar-alt"></span>
                         Championnat
                         </Link>
                     </li>
                     <li className="normal-item-pro">
-                        <Link to="dashboard-coming-soon.html">
+                        <Link to="/events">
                             <span className="fa fa-comments"></span>
                         Evènements
                         </Link>
                     </li>
                     <li className="normal-item-pro">
-                        <Link to="dashboard-coming-soon.html">
+                        <Link to="/forum">
                             <span className="fa fa-comments"></span>
                         Forum
                         </Link>

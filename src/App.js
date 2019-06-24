@@ -11,6 +11,7 @@ import ClubContainer from './container/ClubContainer';
 import CategoryContainer from './container/CategoryContainer';
 import SeasonContainer from './container/SeasonContainer';
 import HomeContainer from './container/HomeContainer';
+import ChampionshipContainer from './container/ChampionshipContainer';
 import { Route, Switch } from "react-router";
 
 class App extends Component {
@@ -29,6 +30,8 @@ class App extends Component {
             <Route path="/category/:id" component={CategoryContainer} />
             <Route path="/club" component={ClubContainer} />
             <Route path="/season" component={SeasonContainer} />
+            <Route path="/championship" component={ChampionshipContainer} />
+            
           </Switch>
         </main>
         <Footer />
