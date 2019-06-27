@@ -4,11 +4,6 @@ export default function ProfileSidebar(props) {
 	const content = (
 		<div id="content-sidebar-pro">
 			<div id="content-sidebar-info">
-				<img src={`http://localhost:1337/${props.player.image.url}`} alt={props.player.fullname} />
-				<div id="profile-sidebar-name">
-					<h5>{props.player.fullname}</h5>
-					<h6>{props.player.poste}</h6>
-				</div>
 				<div id="profile-sidebar-gradient"></div>
 			</div>
 			
