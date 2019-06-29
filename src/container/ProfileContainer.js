@@ -27,7 +27,8 @@ export default class ProfileContainer extends React.Component {
             return (
                 <>
                     <ProfileSidebar player={this.state.posts} />
-                    <ProfileContent posts={this.state.posts} />
+
+                    <p>lzdzldzefzfe</p>
                 </>
             )
         }

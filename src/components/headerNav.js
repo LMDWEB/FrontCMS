@@ -7,27 +7,27 @@ export default class HeaderNav extends React.Component {
             <nav id="mobile-navigation-pro">
                 <ul id="mobile-menu-pro">
                     <li>
-                        <Link to="/news">
+                        <Link to="/club">
                             <span className="icon-Old-TV"></span>
-                            Actualité
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="dashboard-movies.html">
-                            <span className="icon-Reel"></span>
-                            Saison
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="dashboard-playlists.html">
-                                <span className="icon-Movie"></span>
                             Club
                         </Link>
                     </li>
                     <li>
-                        <Link to="dashboard-new-arrivals.html">
+                        <Link to="#">
+                            <span className="icon-Reel"></span>
+                            Calendrier
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/news">
+                                <span className="icon-Movie"></span>
+                            Actualités
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="#">
                             <span className="icon-Movie-Ticket"></span>
-                            Evenements
+                            Vidéos
                         </Link>
                     </li>
                     <li>
@@ -38,10 +38,6 @@ export default class HeaderNav extends React.Component {
                         </Link>
                     </li>
                 </ul>
-                <div className="clearfix"></div>
-                <div id="search-mobile-nav-pro">
-                    <input type="text" placeholder="Search for Movies or TV Series" aria-label="Search" />
-                </div>
             </nav>
         )
     }

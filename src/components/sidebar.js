@@ -36,12 +36,6 @@ export default class Sidebar extends React.Component {
                         Evènements
                         </Link>
                     </li>
-                    <li className="normal-item-pro">
-                        <Link to="/forum">
-                            <span className="fa fa-comments"></span>
-                        Forum
-                        </Link>
-                    </li>
                 </ul>
                 <div className="clearfix"></div>
             </nav>

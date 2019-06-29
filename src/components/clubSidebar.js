@@ -8,32 +8,13 @@ export default function ProfileSidebar(props) {
 			</div>
 			
 			<div className="content-sidebar-section">
-			<img src="images/demo/paris-fc.png"/>
-				<h3 className="content-sidebar-sub-header">Profile</h3>
+			<img src="images/demo/psg.png"/>
+				<h3 className="content-sidebar-sub-header">Paris-Saint-Germain</h3>
 				<ul id="profile-watched-stats">
 					<li><span>43</span> Matchs</li>
 					<li><span>28</span> Buts</li>
 					<li><span>07</span> Passes décisives</li>
 				</ul>
-			</div>
-			
-			<div className="content-sidebar-section">
-				<h3 className="content-sidebar-sub-header">Favorite Genres</h3>
-				<ul id="profile-favorite-genres">
-					<li>
-						<img src="images/genres/comedy.png" alt="Comedy" />
-					</li>
-					<li>
-						<img src="images/genres/action.png" alt="Action" />
-					</li>
-					<li>
-						<img src="images/genres/romance.png" alt="Romance" />
-					</li>
-					<li>
-						<img src="images/genres/fantasy.png" alt="Fantasy" />
-					</li>
-				</ul>
-				<div className="clearfix"></div>
 			</div>
 			
 			<div className="content-sidebar-section">

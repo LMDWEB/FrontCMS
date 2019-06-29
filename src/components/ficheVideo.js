@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'react-router-dom/Link';
 
-export default function News(props) {
+export default function Video(props) {
     const content = props.posts.map((post) =>
         <div className="item-listing-container-skrn news" key={post.id}>
             <Link to={`/article/${post.id}`}>
@@ -9,7 +9,7 @@ export default function News(props) {
             </Link>
             <div className="item-listing-text-skrn">
                 <div className="titleNews">
-                <span className="category">{post.category.name} : </span>
+                <span className="category">{post.category.name = videos} : </span>
                 <span className="title">
                     <Link to={`/article/${post.id}`}>{post.title}</Link></span>
                 </div>

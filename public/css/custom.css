@@ -1,0 +1,147 @@
+
+main#col-main {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #CEAB5D;
+}
+
+.bg-light {
+    background-color: #04275f !important;
+}
+:selection {
+    color: #ffffff;
+    background: none;
+}
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 55px;
+    padding-left: 55px;
+    line-height: 45px;
+}
+
+#header-user-profile-click {
+    padding: 25px 31px 10px 20px;
+}
+
+#header-user-profile-menu {
+    right: 4px;
+    margin-top: 0;
+}
+
+#header-user-profile-menu ul li a:hover {
+    color: #04275f;
+    text-decoration: none;
+    font-weight: 600;
+    background: none;
+}
+
+.navbar-nav img {
+    padding-left: 55px;
+}
+
+#header-user-profile-click {
+    padding: 10px 31px 10px 20px;
+}
+
+#header-user-notification-menu {
+    right: -4px;
+    margin-top: -11px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.18);
+    border: none;
+}
+
+#header-user-notification-list {
+    background: #04275f;
+}
+
+#header-user-notification-list li a:hover {
+    color: #CEAB5D;
+    text-decoration: none;
+}
+
+/*Effectifs page club*/
+
+.display-team h3{
+    position: absolute;
+}
+.player-profile-avatar__squad-number{
+    position:absolute;
+    top:50%;
+    left:35%;
+    transform:translate(-50%, -50%);
+    color:#ff1541;
+    font-family:"bebasneue",Helvetica,Arial,sans-serif;
+    z-index:1;
+    font-size:20px;
+    font-size:10rem;
+}
+.player-profile-avatar--firstTeam .player-profile-avatar__squad-number{
+    color:#ff1541
+}
+
+.player-profile-avatar{
+    -ms-flex-item-align:start;
+    align-self:flex-start;
+    position:relative;
+    margin-top:80px;
+    margin-bottom:20px;
+    display:none
+}
+@media screen and (min-width: 768px){
+    .player-profile-avatar{
+        display:block
+    }
+}
+
+ul.dashboard-sub-menu li a {
+    margin: 0px 40px 5px 0px;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    background: #04275f;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+ul.dashboard-sub-menu li a:hover {
+    color: #CEAB5D;
+    text-decoration: none;
+}
+
+.ul.dashboard-sub-menu li:after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: #CEAB5D;
+}
+
+ul.dashboard-sub-menu li.current a {
+    color: #CEAB5D;
+}
+.form-group-invite-friends ::-webkit-scrollbar-thumb, ul#friends-activity-profiles li.friends-activity-profiles-more a, a.edit-profile-sidebar, ul.dashboard-sub-menu li.current a:after {
+    background:#CEAB5D ;
+}
+
+h3.content-sidebar-sub-header {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

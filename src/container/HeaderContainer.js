@@ -8,7 +8,6 @@ export default class HeaderContainer extends React.Component {
         return (
             <>
                 <Header />
-                <Sidebar />
             </>
         )
     }
