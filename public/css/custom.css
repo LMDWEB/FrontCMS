@@ -13,6 +13,14 @@ main#col-main {
     color: #CEAB5D;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+ }
+
 .bg-light {
     background-color: #04275f !important;
 }
@@ -20,10 +28,25 @@ main#col-main {
     color: #ffffff;
     background: none;
 }
-.navbar-expand .navbar-nav .nav-link {
-    padding-right: 55px;
+
+.navbar-nav img {
     padding-left: 55px;
+    padding-right: 20px;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
     line-height: 45px;
+}
+
+#header-user-notification-click {
+    padding: 20px 50px 20px 15px;
+}
+
+span.user-notification-count {
+    top: 35px;
+    right: 60px;  
 }
 
 #header-user-profile-click {
@@ -31,8 +54,8 @@ main#col-main {
 }
 
 #header-user-profile-menu {
-    right: 4px;
-    margin-top: 0;
+    right: 24px;
+    margin-top: 2px;
 }
 
 #header-user-profile-menu ul li a:hover {
@@ -47,12 +70,15 @@ main#col-main {
 }
 
 #header-user-profile-click {
-    padding: 10px 31px 10px 20px;
+    padding: 10px 50px 10px 20px;
+}
+#header-user-notification-click {
+    padding: 20px 70px 20px 15px;
 }
 
 #header-user-notification-menu {
-    right: -4px;
-    margin-top: -11px;
+    right: 51px;
+    margin-top: -5px;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.18);
     border: none;
 }
@@ -144,4 +170,61 @@ h3.content-sidebar-sub-header {
     letter-spacing: 0.03em;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/****** Section score ***********/
+
+.fixture-item__crests {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.score-bar {
+    background: #f8f9fa;
+    min-width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 50px;
+    min-height: 185px;
+}
+
+.matchs {
+    display: flex;
+}
+
+.score-date{
+    display: block;
+}
+
+.score-lieu{
+
+}
+
+.fixture-item__team-crest:first-child {
+    margin-right: 0;
+}
+
+/****** Page Article ****/
+
+#movie-detail-header-pro {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0;
+    background-color: white;
+}
+
+/****Tabs****/
+.nav-tabs {
+    border-bottom: 1px solid #04275f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nav-tabs a {
+    color:#04275f;
 }

@@ -1,9 +1,7 @@
 import React from "react";
-import ProfileSidebar from "../components/profileSidebar";
-import ProfileContent from "../components/profileContent";
 
 
-export default class ProfileContainer extends React.Component {
+export default class ClubProfileContainer extends React.Component {
 
 	constructor(props) {
         super(props);
@@ -14,7 +12,7 @@ export default class ProfileContainer extends React.Component {
     }
       
     async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/users/${this.props.match.params.id}`)
+        let response = await fetch(`http://localhost:1337/players/${this.props.match.params.id}`)
         let data = await response.json()
 
         this.setState({
@@ -27,8 +25,7 @@ export default class ProfileContainer extends React.Component {
         if (!this.state.loading) {
             return (
                 <>
-                    <ProfileSidebar/>
-                    <ProfileContent/>
+                    <p>Page Perso du Joueur</p>
                 </>
             )
         }

@@ -1,6 +1,5 @@
 import React from "react";
-import ProfileSidebar from "../components/profileSidebar";
-import ProfileContent from "../components/profileContent";
+import ClubContent from "../components/clubContent";
 import ClubSidebar from "../components/clubSidebar";
 
 export default class ClubContainer extends React.Component {
@@ -8,7 +7,7 @@ export default class ClubContainer extends React.Component {
         return (
             <>
                 <ClubSidebar />
-                <ProfileContent />
+                <ClubContent />
             </>
         )
     }

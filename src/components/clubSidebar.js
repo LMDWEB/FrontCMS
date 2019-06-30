@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProfileSidebar(props) {
+export default function ClubProfileSidebar(props) {
 	const content = (
 		<div id="content-sidebar-pro">
 			<div id="content-sidebar-info">

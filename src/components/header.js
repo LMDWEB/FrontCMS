@@ -31,12 +31,12 @@ export default class Header extends React.Component {
             // </header>
 
             <>
-                <header id="videohead-pro" className="sticky-header">
+                <header id="videohead-pro" className="sticky-header fixed-top">
                     <Navbar bg="light" variant="light">
-                        <Nav className="ml-auto mr-auto">
+                        <Nav className="mr-auto">
+                            <Link to="/home"><img src={logo} alt="Logo" style={style} /></Link>
                             <Nav.Link href="/club" >Club</Nav.Link>
                             <Nav.Link href="#features">Calendrier</Nav.Link>
-                            <Link to="/"><img src={logo} alt="Logo" style={style} /></Link>
                             <Nav.Link href="/news">Actualités</Nav.Link>
                             <Nav.Link href="#pricing">Vidéos</Nav.Link>
                         </Nav>

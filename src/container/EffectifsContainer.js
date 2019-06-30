@@ -2,21 +2,58 @@ import React from "react";
 import Link from 'react-router-dom/Link';
 import Row from 'react-bootstrap/Row';
 
-export default function ProfileContent(props) {
+export default function EffectifsContainer(props) {
 	
 
     const content = (
         <div id="col-main-with-sidebar">
 			<div className="dashboard-container">
-				<ul className="dashboard-sub-menu">
+				{/* <ul className="dashboard-sub-menu">
 					<li className="current"><Link to="#!">Articles</Link></li>
 					<li><Link to="#!">Effectifs</Link></li>
-				</ul>
+				</ul> */}
 
-				<div class="row">
+				<div class="row display-team ">
+					<h3>Gardiens</h3>
+					<br/>
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
-							<p class="player-profile-avatar__squad-number">9</p>
+						
+							<a href="/player/:id"><img src="images/demo/areola.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Alphonse Aerola</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+							
+							<a href="dashboard-movie-profile.html"><img src="images/demo/areola.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Alphonse Aerola</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+					
+							<a href="dashboard-movie-profile.html"><img src="images/demo/areola.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Alphonse Aerola</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row display-team ">	
+					<h3>Défenseurs</h3>
+					
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+							
 							<a href="dashboard-movie-profile.html"><img src="images/demo/thiago.png" alt="Listing"/></a>
 							<div class="item-listing-text-skrn">
 								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Thiago Silva</a></h6>
@@ -24,10 +61,15 @@ export default function ProfileContent(props) {
 							</div>
 						</div>
 					</div>
+				</div>
+
+				<div class="row display-team ">	
 					
+					<h3>Milieux</h3>
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
-						<p class="player-profile-avatar__squad-number">9</p>
+				
 							<a href="dashboard-movie-profile.html"><img src="images/demo/didi.png" alt="Listing"/></a>
 							<div class="item-listing-text-skrn">
 								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Angel Di Maria</a></h6>
@@ -35,10 +77,85 @@ export default function ProfileContent(props) {
 							</div>
 						</div>
 					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+						
+							<a href="dashboard-movie-profile.html"><img src="images/demo/didi.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Angel Di Maria</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+					
+							<a href="dashboard-movie-profile.html"><img src="images/demo/didi.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Angel Di Maria</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+						
+							<a href="dashboard-movie-profile.html"><img src="images/demo/didi.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Angel Di Maria</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row display-team ">	
+
+					<h3>Attaquants</h3>
 
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
-						<p class="player-profile-avatar__squad-number">9</p>
+				
+							<a href="dashboard-movie-profile.html"><img src="images/demo/cavani.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Edison Cavani</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+					
+							<a href="dashboard-movie-profile.html"><img src="images/demo/cavani.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Edison Cavani</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+					
+							<a href="dashboard-movie-profile.html"><img src="images/demo/cavani.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Edison Cavani</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+				
+							<a href="dashboard-movie-profile.html"><img src="images/demo/cavani.png" alt="Listing"/></a>
+							<div class="item-listing-text-skrn">
+								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Edison Cavani</a></h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">
+						
 							<a href="dashboard-movie-profile.html"><img src="images/demo/cavani.png" alt="Listing"/></a>
 							<div class="item-listing-text-skrn">
 								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Edison Cavani</a></h6>

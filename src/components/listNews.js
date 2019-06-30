@@ -1,6 +1,7 @@
 import React from "react";
 import News from "./ficheNews";
 import Link from "react-router-dom/Link";
+import Row from 'react-bootstrap/Row';
 
 export default class ListNews extends React.Component {
     constructor(props) {
@@ -40,74 +41,55 @@ export default class ListNews extends React.Component {
                             {/* pourquoi pas mettre une vidéo */}
                             </div>
                             <h4 className="heading-extra-margin-bottom">Les vidéos</h4>
-                            <div className="row">
-                            <div className="item-listing-container-skrn news">
-                                <article className="image-card">
-                                    <a className="image-card__main-link" href="https://www.psg.fr/equipes/equipe-premiere/content/paris-saint-germain-manchester-united-fc-le-match" title="Paris Saint-Germain - Manchester United FC : Le match">
-                                        <div className="image-card__background-container">
-                                            <figure className="figure">
-                                                <img className="image u-blur-up lazyautosizes lazyloaded" src="https://psgimages.stadion.io/media/22045/diapo-manu-19-verratti-am.jpg?center=0.34408602150537637,0.46953405017921146&amp;mode=crop&amp;width=450&amp;height=338&amp;quality=60" sizes="685px" alt=""/>
-                                            </figure>
-                                        </div>
-                                        <header className="image-card__header">
-                                            <span className="image-card__section"></span>
-                                            <h1 className="image-card__title">Paris Saint-Germain - Manchester United FC : Le match</h1>
-                                            <div className="info-bar info-bar--firstTeam">
-                                                <div className="info-bar__pub-info">
-                                                    <span className="info-bar__context">
-                                                    Full Match
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </header>
-                                    </a>
-                                </article>
+                            <div id="cart" className="col-12">
+            <Row>
+                      <div className="example-1 carte">
+                        <div className="wrapper">
+                          <div className="date">
+                            <span className="day">12</span>
+                            <span className="month">Aug</span>
+                            <span className="year">2016</span>
+                          </div>
+                          <div className="data">
+                            <div className="content">
+                              <span className="author">Jane Doe</span>
+                              <h1 className="title"><a href="#">Marco Verratti : «On est déjà une grande équipe»</a></h1>
+                              <p className="text">L’international italien est revenu sur sa saison avec le Paris Saint-Germain et son entente avec l’entraîneur Thomas Tuchel</p>
+                              <label for="show-menu" className="menu-button"><span></span></label>
                             </div>
-                            <div className="item-listing-container-skrn news">
-                                <article className="image-card">
-                                    <a className="image-card__main-link" href="https://www.psg.fr/equipes/equipe-premiere/content/paris-saint-germain-manchester-united-fc-le-match" title="Paris Saint-Germain - Manchester United FC : Le match">
-                                        <div className="image-card__background-container">
-                                            <figure className="figure">
-                                                <img className="image u-blur-up lazyautosizes lazyloaded" src="https://psgimages.stadion.io/media/22045/diapo-manu-19-verratti-am.jpg?center=0.34408602150537637,0.46953405017921146&amp;mode=crop&amp;width=450&amp;height=338&amp;quality=60" sizes="685px" alt=""/>
-                                            </figure>
-                                        </div>
-                                        <header className="image-card__header">
-                                            <span className="image-card__section"></span>
-                                            <h1 className="image-card__title">Paris Saint-Germain - Manchester United FC : Le match</h1>
-                                            <div className="info-bar info-bar--firstTeam">
-                                                <div className="info-bar__pub-info">
-                                                    <span className="info-bar__context">
-                                                    Full Match
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </header>
-                                    </a>
-                                </article>
-                            </div>
-                            <div className="item-listing-container-skrn news">
-                                <article className="image-card">
-                                    <a className="image-card__main-link" href="https://www.psg.fr/equipes/equipe-premiere/content/paris-saint-germain-manchester-united-fc-le-match" title="Paris Saint-Germain - Manchester United FC : Le match">
-                                        <div className="image-card__background-container">
-                                            <figure className="figure">
-                                                <img className="image u-blur-up lazyautosizes lazyloaded" src="https://psgimages.stadion.io/media/22045/diapo-manu-19-verratti-am.jpg?center=0.34408602150537637,0.46953405017921146&amp;mode=crop&amp;width=450&amp;height=338&amp;quality=60" sizes="685px" alt=""/>
-                                            </figure>
-                                        </div>
-                                        <header className="image-card__header">
-                                            <span className="image-card__section"></span>
-                                            <h1 className="image-card__title">Paris Saint-Germain - Manchester United FC : Le match</h1>
-                                            <div className="info-bar info-bar--firstTeam">
-                                                <div className="info-bar__pub-info">
-                                                    <span className="info-bar__context">
-                                                    Full Match
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </header>
-                                    </a>
-                                </article>
-                            </div>
+                            <input type="checkbox" id="show-menu" />
+                          </div>
                         </div>
+                      </div>
+                      <div className="example-2 carte">
+                      <div className="wrapper">
+                        <div className="header">
+                          <div className="date">
+                            <span className="day">12</span>
+                            <span className="month">Aug</span>
+                            <span className="year">2016</span>
+                          </div>
+                          <ul className="menu-content">
+                            <li>
+                              <a href="#" className="fa fa-bookmark-o"></a>
+                            </li>
+                            <li><a href="#" className="fa fa-heart-o"><span>18</span></a></li>
+                            <li><a href="#" className="fa fa-comment-o"><span>3</span></a></li>
+                          </ul>
+                        </div>
+                        <div className="data">
+                          <div className="content">
+                            <span className="author">Jane Doe</span>
+                            <h1 className="title"><a href="#">Edinson Cavani : «Nous étions imbattables»</a></h1>
+                            <p className="text">Avant de rejoindre la sélection uruguayenne pour disputer la Copa América 2019, le meilleur buteur de l’histoire du Paris Saint-Germain est revenu sur sa saison et les améliorations à avoir.</p>
+                            <a href="#" className="button">Read more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+            </Row>
+                </div>
                     </div>
                 </div>
             </div>

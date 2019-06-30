@@ -17,9 +17,8 @@ export default class HeaderProfile extends React.Component {
 				<div id="header-user-profile-menu">
 					<ul>
 						<li><Link to="/profile"><span className="icon-User"></span>My Profile</Link></li>
-						<li><Link to="dashboard-account.html"><span className="icon-Gears"></span>Account Details</Link></li>
-						<li><Link to="#!"><span className="icon-Life-Safer"></span>Help/Support</Link></li>
-						<li><Link to="index.html"><span className="icon-Power-3"></span>Log Out</Link></li>
+						<li><Link to="/home"><span className="icon-Power-3"></span>Log Out</Link></li>
+						<li><Link to="/signin"><span className="icon-Power-3"></span>Log In</Link></li>
 					</ul>
 				</div>
 			</div>
