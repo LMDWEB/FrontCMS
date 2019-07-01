@@ -25,6 +25,7 @@ export default function Video(props) {
     return (
         <div className="col-12 home">
             <div className="row">
+            <p>FICHE VIDEO</p>
                 {content}
             </div>
         </div>

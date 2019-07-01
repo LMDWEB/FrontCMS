@@ -21,9 +21,6 @@ export default class ArticleList extends Component {
     this.setState({ loading: false, posts: posts })
   }
 
-  //To do : Conditionner pour afficher les flash news
-  //To do : Conditionner pour afficher les vidéos
-  //To do : Car sur le page club il faut separé les articles et les vidéos propre au club
   render() {
     if (!this.state.loading) {
       return (

@@ -1,4 +1,9 @@
 import React from "react";
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import ListNews from "../components/listNews";
+
 
 
 export default class ClubProfileContainer extends React.Component {
@@ -25,7 +30,26 @@ export default class ClubProfileContainer extends React.Component {
         if (!this.state.loading) {
             return (
                 <>
-                    <p>Page Perso du Joueur</p>
+                   <Container>
+                        <Row>
+                            <div className="content-sidebar-pro">
+                                <div id="content-sidebar-info">
+                                    <div id="profile-sidebar-gradient"></div>
+                                </div>
+
+                                <div className="content-sidebar-section">
+                                    <img src="images/demo/cavani.png"/>
+                                    <h3 className="content-sidebar-sub-header">Profile</h3>
+                                </div>
+                            </div>
+                            <div className="dashboard-container">
+                                <Col>2 of 2</Col>
+                                <ListNews/>
+
+                            </div>
+                            
+                        </Row>
+                    </Container>
                 </>
             )
         }

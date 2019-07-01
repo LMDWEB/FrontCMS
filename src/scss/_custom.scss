@@ -21,6 +21,9 @@ $open-sans: 'Open Sans', sans-serif;
 * {
   box-sizing: border-box;
 }
+
+
+
 /*carte crée un classe .carte */
 
 #cart{
@@ -299,6 +302,10 @@ $open-sans: 'Open Sans', sans-serif;
         }
         }
     }
+}
+
+.item-listing-container-skrn.news a {
+    text-decoration: none;
 }
 
 

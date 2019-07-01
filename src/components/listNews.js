@@ -2,6 +2,7 @@ import React from "react";
 import News from "./ficheNews";
 import Link from "react-router-dom/Link";
 import Row from 'react-bootstrap/Row';
+import Container from "react-bootstrap/Container";
 
 export default class ListNews extends React.Component {
     constructor(props) {
@@ -26,25 +27,45 @@ export default class ListNews extends React.Component {
     }
 
     render() { 
+
         if (!this.state.loading) {
             return (
                 <div className="dashboard-container">
-                    <div className="col-12 home">
-                        <div className="row">
+                    <div className="ml-auto mr-auto col-8 home">
+                        <Row>
                             <h4 className="heading-extra-margin-bottom">Toute l'actualité du PSG</h4>
                             <News posts={this.state.posts} />
-                            <div>
-                                <Link to ='/news' >Voir plus</Link>
+                            <div class="sim-button button12">
+                            <div style={{  
+                                content: '',
+                                position: 'absolute',
+                                top: '50px',
+                                left: '-5px',
+                                width: '0',
+                                height: '0',
+                                borderLeft: '100px solid transparent',
+                                borderRight: '100px solid transparent',
+                                borderBottom: '190px solid rgba(255,255,255,0.25)',
+                                zIndex: '1',
+                                WebkitTransition: 'all 0.5s',
+                                MozTransition: 'all 0.5s',
+                                OTransition: 'all 0.5s',
+                                transition: 'all 0.5s',
+                             }}/>
+                              <span><Link to ='/news' >Voir plus</Link></span>
                             </div>
-                            {/* Thumbnail video */}
-                            <div className="central-top-bar">
-                            {/* pourquoi pas mettre une vidéo */}
-                            </div>
-                            <h4 className="heading-extra-margin-bottom">Les vidéos</h4>
-                            <div id="cart" className="col-12">
-            <Row>
+                        </Row>
+                    
+                        
+                        <div className="bsPrefix central-top-bar"></div>
+                    
+                        
+
+                        <h4 className="heading-extra-margin-bottom">Les vidéos</h4>
+                        <div id="cart" className="col-12">
+                      <Row>
                       <div className="example-1 carte">
-                        <div className="wrapper">
+                        <div className="wrapper" s>
                           <div className="date">
                             <span className="day">12</span>
                             <span className="month">Aug</span>
@@ -92,7 +113,7 @@ export default class ListNews extends React.Component {
                 </div>
                     </div>
                 </div>
-            </div>
+            
             );
         }
         return (<h2 className="postList-title">Waiting for API...</h2>);

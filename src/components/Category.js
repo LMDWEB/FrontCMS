@@ -18,3 +18,9 @@ export default function Category(props) {
         </ul>
     );
 }
+    // to do conditonnement icon ligne6
+    // if ({cat.id === 1}) {
+    //     <span class="icon-Newspaper"></span> 
+    // }else {
+    //     <span class="icon-Movie"></span>
+    // }

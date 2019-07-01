@@ -17,6 +17,7 @@ import LoginForm from './container/LoginForm';
 import { Route, Switch } from "react-router";
 import ProfileContainer from './container/ProfileContainer'
 import EffectifsContainer from './container/EffectifsContainer';
+import Page404Container from './container/Page404Container';
 
 class App extends Component {
   render() {
@@ -38,6 +39,7 @@ class App extends Component {
             <Route path="/championship" component={ChampionshipContainer} />
             <Route path="/profile" component={ProfileContainer} />
             <Route path="/news" component={AllNewsContainer} />
+            <Route path = "/*" component={Page404Container} /> 
             {/* <Route path="/news" component={EffectifsContainer} />  */}
           </Switch>
         </main>

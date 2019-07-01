@@ -144,7 +144,7 @@ ul.dashboard-sub-menu li a:hover {
     text-decoration: none;
 }
 
-.ul.dashboard-sub-menu li:after{
+ul.dashboard-sub-menu li:after{
     display: block;
     content: "";
     position: absolute;
@@ -198,10 +198,6 @@ h3.content-sidebar-sub-header {
     display: block;
 }
 
-.score-lieu{
-
-}
-
 .fixture-item__team-crest:first-child {
     margin-right: 0;
 }
@@ -228,3 +224,266 @@ h3.content-sidebar-sub-header {
 .nav-tabs a {
     color:#04275f;
 }
+
+
+/*Custom Score Bar*/
+
+#matchday-section{
+    height: 385px;
+    color: white;
+    background-color: #151e2d;
+    padding-top: 60px;
+    position: relative;
+    width: 100%;
+}
+
+#matchday-section::before {
+   background: no-repeat 1%;
+   background-size: contain;
+   content: '';
+   position: absolute;
+   top: 2px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 0.075;
+}
+
+.match-banner{
+   display: inherit;
+}
+
+.infos{
+    width: 100%;
+
+}
+.text-date{
+   font-size: 30px;
+}
+.text-time{
+   font-size:50px;
+   margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.team-one img {
+    width: 25%;
+    left: 262px;
+    bottom: 135px;
+    position: relative;
+}
+
+.team-two img {
+    width: 23%;
+    position: relative;
+    right: 263px;
+    bottom: 140px;
+}
+
+
+span.match-type, span.text-lieu {
+   display: block;
+}
+
+.text-lieu{
+
+   font-family: 'Open-sans', sans-serif;
+   font-size: 21px;
+   font-weight: 700;
+}
+
+.team-one, .team-two, .infos {
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+
+   #matchday-section {
+       height: 385px;
+       color: white;
+       background-color: #151e2d;
+       padding-top: 125px;
+       position: relative;
+   }
+
+   #matchday-section::before {
+    background: no-repeat 49%;
+   }
+
+   .infos {
+       width: 100%;
+       margin-left: 13px;
+   }
+
+   .text-date {
+       font-size: 14px;
+   }
+
+   .text-lieu {
+       font-family: 'Open-sans', sans-serif;
+       font-size: 10px;
+       font-weight: 700;
+   }
+
+   .match-type {
+       font-size: 13px;
+   }
+
+   .team-one img {
+       width: 45%;
+       margin-top: 57px;
+       margin-right: 14px;
+       left: 15px;
+       position: absolute;
+   }
+
+   .team-one-text {
+       max-width: 125px;
+       text-align: left;
+   }
+
+
+   .team-two img {
+       width: 22%;
+       margin-top: 40px;
+       position: relative;
+       right: 73px;
+       top: 24px;
+   }
+
+}
+
+/***************** BUTTON ***********/
+
+.sim-button {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sim-button a{
+    color: white;
+    text-decoration: none;
+}
+
+.button12 {
+    color: rgba(255,255,255,1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.5);
+    overflow: hidden;
+    background: #04275f;
+}
+
+.button12 span {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/****************** LOGIN **********************/
+
+#body-login{
+    background-image: linear-gradient(to top, #004170, #235385, #3c669b, #5279b1, #688dc8, #749ad2, #81a6db, #8eb3e5, #97bbe3, #a1c2e1, #aec9de, #bccfdc);
+}
+#loginform{
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 700px;
+    width: 30%;
+    height: 60%;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+  }
+  
+  #headerTitle{
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+    padding: 2rem 0;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    max-width: 100%;
+    line-height: 15px;
+    z-index: 999;
+    
+  }
+  
+  .log input{
+    width: 80%;
+    box-sizing: border-box;
+      border: none;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+  .log input:focus{
+     box-shadow: inset 0px -3px 0px 0px rgba(34,193,195,0.7);
+     outline: none;
+  }
+  
+  .log input::-webkit-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.25s ease-out;
+  }
+  
+  .log input:hover::-webkit-input-placeholder,
+  .log input:focus::-webkit-input-placeholder{
+    opacity: 0;
+  }
+  
+  .log label{
+    align-self: start;
+    padding-left: 4.5rem;
+    padding-bottom: 0.5rem;
+    color: rgba(187,187,187,0.9);
+  }
+  
+  .log button{
+    border-radius: 25px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    background: #04275f;
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-out;
+  }
+  
+  .log button:hover{
+    opacity: 0.8;
+  }
+  
+  #button{
+    padding-bottom: 1.5rem;
+  }
+ 
+  
+
+  
