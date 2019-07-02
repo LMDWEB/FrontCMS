@@ -36,7 +36,7 @@ export default class ListCategory extends React.Component {
                 <div className="dashboard-container">
                     <div className="col-12 home">
                         <div className="row">
-                            <h4 className="heading-extra-margin-bottom">{nameCat}</h4>
+                            <h4 className="heading-extra-margin-bottom heading-extra-margin-top">{nameCat}</h4>
                             <News posts={this.state.posts} />
                         </div>
                     </div>

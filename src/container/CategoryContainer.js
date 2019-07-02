@@ -51,7 +51,7 @@ export default class CategoryContainer extends React.Component {
 			return (
 				<main id="col-main">
 					<CategoryNews categories={this.state.categories} />
-					<h4 className="heading-extra-margin-bottom">{this.state.category}</h4>
+					<h4 className="heading-extra-margin-bottom heading-extra-margin-top">{this.state.category}</h4>
 					<News posts={this.state.postCategories} />
 					<ul className="page-numbers">
 						<ReactPaginate

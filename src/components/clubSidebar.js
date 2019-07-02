@@ -16,14 +16,12 @@ export default function ClubProfileSidebar(props) {
 					<li><span>07</span> Passes décisives</li>
 				</ul>
 			</div>
-			
-			<div className="content-sidebar-section">
-				<h3 className="content-sidebar-sub-header">Club</h3>
-				<ul id="friends-activity-profiles">
-					<li><a href="#!"><img src="images/demo/user-8.jpg" alt="Friend" /></a></li>
-				</ul>
-				<div className="clearfix"></div>
+			<div className="infos-club">
+				<span>Année de Création | 1970</span>
+				<span>Stade | Parc des Princes</span>
+				<span>Capacité | 42 000</span>
 			</div>
+			
 		</div>
     );
 

@@ -4,7 +4,7 @@ import Link from "react-router-dom/Link";
 import Row from 'react-bootstrap/Row';
 import Container from "react-bootstrap/Container";
 
-export default class ListNews extends React.Component {
+export default class VideoContent extends React.Component {
     constructor(props) {
         super(props);
     
@@ -33,28 +33,13 @@ export default class ListNews extends React.Component {
 
         if (!this.state.loading) {
             return (
-                <div className="dashboard-container">
-                    <div className="ml-auto mr-auto  col-8 home">
-                        <Row>
-                            <h4 className="heading-extra-margin-bottom heading-extra-margin-top">Toute l'actualité du PSG</h4>
-                            <div className="col-12">
-                                <News posts={this.state.posts} />
-                            </div>
-                            
-                            <div class="sim-button button12">
-                           
-                              <span><Link to ='/news' >Voir plus</Link></span>
-                            </div>
-                        </Row>
                     
-                        
-                        <Row>
-                          <div className="separator"></div>
-                        </Row>
-                    
-                        <h4 className="heading-extra-margin-bottom heading-extra-margin-top">Les vidéos</h4>
-                        <div id="cart" className="col-12 ml-auto mr-auto">
-                      <Row>
+            <Container fluid>
+
+            {/* <h4 className="heading-extra-margin-bottom heading-extra-margin-top">Les vidéos</h4> */}
+            <Row>
+                        <div id="cart" className= "col-12 ml-auto mr-auto">
+                      
                       <div className="example-1 carte ">
                         <div className="wrapper" style={{backgroundImage: 'url(' + imgUrl + ')'}}>
                           <div className="date">
@@ -123,12 +108,14 @@ export default class ListNews extends React.Component {
                       <div class="sim-button button12">
                            <span><Link to ='/news' >Voir plus</Link></span>
                       </div>
+                      </div>
 
-            </Row>
-                </div>
-                    </div>
-                </div>
-            
+                 </Row>
+
+
+
+                       
+            </Container>
             );
         }
         return (<h2 className="postList-title">Waiting for API...</h2>);

@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 import FeaturedNews from "../components/FeaturedNews";
 import ArticleRelated from "../components/ArticleRelated";
 import ListCategory from "../components/listCategory";
+import SeparatorBlue from "../components/SeparatorBlue";
 
 
 export default class HomeContainer extends React.Component {
@@ -84,6 +85,7 @@ export default class HomeContainer extends React.Component {
                     </div>
                   </div>
               </Row>  */}
+              <SeparatorBlue/>
               <Row>
                 <div id="matchday-section" className="justify-content-md-center background-image">
                   <div style={{backgroundImage: "url("+bg+")" ,backgroundRepeat: 'no-repeat', backgroundSize: 'contain' , content: '', position: 'absolute' , top: '2px' , bottom: '0', left: '0', right: '0' , opacity: '0.075'}} />
@@ -107,6 +109,7 @@ export default class HomeContainer extends React.Component {
                   </Col>
                 </div>
               </Row>
+              <SeparatorBlue/>
              {/* <Row>
                  <Category categories={this.state.categories} /> 
               </Row>*/}

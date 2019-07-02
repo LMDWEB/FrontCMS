@@ -3160,10 +3160,13 @@ color: #aaaaaa;
 /*
 =============================================== 18. FOOTER STYLES ===============================================
 */
-footer#footer-pro {
-	border-top:1px solid rgba(0,0,0,  0.09);
-	margin-left: 161px;
-	background: #FFF;
+#footer-pro {
+	border-top: 1px solid rgba(0, 0, 0, 0.09);
+	margin-left: 0; 
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .copyright-text-pro {

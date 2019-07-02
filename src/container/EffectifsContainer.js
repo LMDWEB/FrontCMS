@@ -1,6 +1,7 @@
 import React from "react";
 import Link from 'react-router-dom/Link';
 import Row from 'react-bootstrap/Row';
+import Container from "react-bootstrap/Container";
 
 export default function EffectifsContainer(props) {
 	
@@ -178,10 +179,15 @@ export default function EffectifsContainer(props) {
     );
 
     return (
-        <div className="col-12">
-            <div className="row">
-                {content}
-            </div>
-        </div>
+		<Container>
+			<Row>
+			<div className="col-12">
+				<div className="row">
+					{content}
+				</div>
+			</div>
+			</Row>
+		</Container>
+        
     );
 }

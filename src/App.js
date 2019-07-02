@@ -5,7 +5,7 @@ import Article from './components/Article';
 import Header from './container/HeaderContainer';
 import Footer from './components/footer';
 import SecurityContainer from './container/SecurityContainer';
-import ClubProfileContainer from './container/ClubProfileContainer';
+import PlayerContainer from './container/PlayerContainer';
 import NewsContainer from './container/NewsContainer';
 import ClubContainer from './container/ClubContainer';
 import CategoryContainer from './container/CategoryContainer';
@@ -26,12 +26,12 @@ class App extends Component {
         <Header />
         <main className="App-content">
           <Switch>
-            <Route path="/home" exact component={HomeContainer} />
+            <Route path="/" exact component={HomeContainer} />
             <Route path="/signin" exact component={LoginForm} />
             <Route path="/articles" component={ArticleList} />
             <Route path="/test/:id" component={Article} />
             <Route path="/security" component={SecurityContainer} />
-            <Route path="/player/:id" component={ClubProfileContainer} />
+            <Route path="/player/:id" component={PlayerContainer} />
             <Route path="/article/:id" component={NewsContainer} />
             <Route path="/category/:id" component={CategoryContainer} />
             <Route path="/club" component={ClubContainer} />
