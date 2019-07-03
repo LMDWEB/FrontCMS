@@ -13,7 +13,7 @@ export default function TabsClub(props) {
    
 
     const content = (
-        <Tabs defaultActiveKey="Classement" id="uncontrolled-tab-example" className="ml-auto mr-auto">
+        <Tabs defaultActiveKey="Vidéos" id="uncontrolled-tab-example" className="ml-auto mr-auto">
             <Tab eventKey="Effectifs" title="Effectifs" disabled>
                 <EffectifsContainer/>
             </Tab>
@@ -26,7 +26,7 @@ export default function TabsClub(props) {
             <Tab eventKey="Palmarès" title="Palmarès" disabled>
                 {/* <Sonnet /> */}
             </Tab>
-            <Tab eventKey="Vidéos" title="Vidéos" disabled>
+            <Tab eventKey="Vidéos" title="Vidéos">
                 <VideoContent/>
             </Tab>
         </Tabs>

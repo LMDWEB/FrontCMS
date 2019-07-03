@@ -33,9 +33,9 @@ export default class ListNews extends React.Component {
 
         if (!this.state.loading) {
             return (
-                <div className="dashboard-container">
-                    <div className="ml-auto mr-auto  col-8 home">
-                        <Row>
+
+
+                        {/* <Row>
                             <h4 className="heading-extra-margin-bottom heading-extra-margin-top">Toute l'actualité du PSG</h4>
                             <div className="col-12">
                                 <News posts={this.state.posts} />
@@ -50,10 +50,12 @@ export default class ListNews extends React.Component {
                         
                         <Row>
                           <div className="separator"></div>
-                        </Row>
+                        </Row> */},
                     
-                        <h4 className="heading-extra-margin-bottom heading-extra-margin-top">Les vidéos</h4>
-                        <div id="cart" className="col-12 ml-auto mr-auto">
+                    
+            <div id="cart" className="col-12 ml-auto mr-auto">
+            <h3>Mes Articles</h3>
+            <br/>
                       <Row>
                       <div className="example-1 carte ">
                         <div className="wrapper" style={{backgroundImage: 'url(' + imgUrl + ')'}}>
@@ -125,10 +127,7 @@ export default class ListNews extends React.Component {
                       </div>
 
             </Row>
-                </div>
-                    </div>
-                </div>
-            
+            </div>
             );
         }
         return (<h2 className="postList-title">Waiting for API...</h2>);

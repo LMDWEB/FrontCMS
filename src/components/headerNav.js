@@ -13,7 +13,7 @@ export default class HeaderNav extends React.Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#">
+                        <Link to="/calendrier">
                             <span className="icon-Reel"></span>
                             Calendrier
                         </Link>
@@ -25,7 +25,7 @@ export default class HeaderNav extends React.Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#">
+                        <Link to="/videos">
                             <span className="icon-Movie-Ticket"></span>
                             Vidéos
                         </Link>

@@ -11,14 +11,13 @@ export default function ProfileContent(props) {
         <div id="col-main-with-sidebar">
 			<div className="dashboard-container">
 				<div class="row display-team ">
-					<h3>Mes Articles</h3>
-					<br/>
+				
 					<ListNews/>
 
 				</div>
 
 				<div class="row display-team ">	
-					<h3>Mes Vidéo</h3>
+					<h3>Joueur liés à l'article</h3>
 					
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn player-profile-avatar player-profile-avatar--firstTeam">

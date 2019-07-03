@@ -57,9 +57,9 @@ export default class Header extends React.Component {
                         <NavbarCollapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
                                 <NavLink href="/club" >Club</NavLink>
-                                <NavLink href="#features">Calendrier</NavLink>
+                                <NavLink href="/calendrier">Calendrier</NavLink>
                                 <NavLink href="/news">Actualités</NavLink>
-                                <NavLink href="#">Vidéos</NavLink>
+                                <NavLink href="/videos">Vidéos</NavLink>
                             </Nav>
                             <Nav>
                                 <Nav.Link href="#deets"><HeaderProfile /></Nav.Link>

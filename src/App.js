@@ -4,6 +4,9 @@ import ArticleList from './components/ArticleList';
 import Article from './components/Article';
 import Header from './container/HeaderContainer';
 import Footer from './components/footer';
+import VideoContent from "./components/VideoContent";
+import CalendarContent from "./components/CalendarContent";
+
 import SecurityContainer from './container/SecurityContainer';
 import PlayerContainer from './container/PlayerContainer';
 import NewsContainer from './container/NewsContainer';
@@ -18,6 +21,7 @@ import { Route, Switch } from "react-router";
 import ProfileContainer from './container/ProfileContainer'
 import EffectifsContainer from './container/EffectifsContainer';
 import Page404Container from './container/Page404Container';
+import VideoContainer from './container/VideoContainer';
 
 class App extends Component {
   render() {
@@ -39,6 +43,8 @@ class App extends Component {
             <Route path="/championship" component={ChampionshipContainer} />
             <Route path="/profile" component={ProfileContainer} />
             <Route path="/news" component={AllNewsContainer} />
+            <Route path="/videos" component={VideoContent} />
+            <Route path="/calendrier" component={CalendarContent} />
             <Route path = "/*" component={Page404Container} /> 
             {/* <Route path="/news" component={EffectifsContainer} />  */}
           </Switch>

@@ -27,7 +27,7 @@ export default function TabsClub(props) {
             <Tab eventKey="Palmarès" title="Palmarès" disabled>
                 {/* <Sonnet /> */}
             </Tab>
-            <Tab eventKey="Vidéos" title="Vidéos" disabled>
+            <Tab eventKey="Vidéos" title="Vidéos">
                     <VideoContent/>
             </Tab>
         </Tabs>

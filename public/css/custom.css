@@ -859,3 +859,11 @@ u-blur-up {
     color: #FFF;
 }
 
+.tab-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+div#cart {
+    padding-top: 41px;
+}
