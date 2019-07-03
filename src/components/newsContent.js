@@ -11,7 +11,7 @@ export default class NewsContent extends React.Component {
       }
     
       async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/articles/${this.props.match.params.id}`)
+        let response = await fetch(`https://api.news.lmdfoot.com/articles/${this.props.match.params.id}`)
         let data = await response.json()
         this.setState({
           loading: false,

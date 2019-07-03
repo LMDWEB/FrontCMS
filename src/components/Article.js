@@ -10,7 +10,7 @@ export default class Article extends React.Component {
       }
     
       async componentDidMount() {
-        let data = await fetch(`http://localhost:1337/articles/${this.props.match.params.id}`);
+        let data = await fetch(`https://api.news.lmdfoot.com/articles/${this.props.match.params.id}`);
 
         this.setState({
           loading: false,

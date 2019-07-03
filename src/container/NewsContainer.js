@@ -20,7 +20,7 @@ export default class NewsContainer extends React.Component {
       }
       
       async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/articles/${this.props.match.params.id}`);
+        let response = await fetch(`https://api.news.lmdfoot.com/articles/${this.props.match.params.id}`);
         let data = await response.json();
 
         this.setState({
@@ -35,7 +35,7 @@ export default class NewsContainer extends React.Component {
     }
 
     render() {
-        const imgUrl = `http://localhost:1337/${this.state.image.url}`;
+        const imgUrl = `https://api.news.lmdfoot.com/${this.state.image.url}`;
         
         if (!this.state.loading) {
             return (

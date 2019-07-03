@@ -12,7 +12,7 @@ export default class ArticleList extends Component {
   }
 
   async componentDidMount() {
-    let response = await fetch("http://localhost:1337/articles/");
+    let response = await fetch("https://api.news.lmdfoot.com/articles/");
     if (!response.ok) {
       return
     }
@@ -35,7 +35,7 @@ export default class ArticleList extends Component {
                 <div className="postList-post" key={post.id}>
                   <Link to={`/article/${post.id}`}>
                     <h3>{post.title}</h3>
-                    <img src={`http://localhost:1337/${post.image.url}`} alt={post.image.name} />
+                    <img src={`https://api.news.lmdfoot.com/${post.image.url}`} alt={post.image.name} />
                   </Link>
                 </div>
               );

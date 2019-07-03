@@ -5,7 +5,7 @@ export default function Video(props) {
     const content = props.posts.map((post) =>
         <div className="item-listing-container-skrn news" key={post.id}>
             <Link to={`/article/${post.id}`}>
-                <img src={`http://localhost:1337/${post.image.url}`} alt={post.title} />
+                <img src={`https://api.news.lmdfoot.com/${post.image.url}`} alt={post.title} />
             </Link>
             <div className="item-listing-text-skrn">
                 <div className="titleNews">

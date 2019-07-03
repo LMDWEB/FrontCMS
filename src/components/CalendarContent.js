@@ -15,7 +15,7 @@ export default class CalendarContent extends Component {
   }
 
   async componentDidMount() {
-    let response = await fetch("http://localhost:1337/articles/");
+    let response = await fetch("https://api.news.lmdfoot.com/articles/");
     if (!response.ok) {
       return
     }

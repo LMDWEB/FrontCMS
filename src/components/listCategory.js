@@ -14,7 +14,7 @@ export default class ListCategory extends React.Component {
       }
     
       async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/articles/?category=${this.state.category}`);
+        let response = await fetch(`https://api.news.lmdfoot.com/articles/?category=${this.state.category}`);
         
         if (!response.ok) {
           return

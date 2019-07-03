@@ -14,7 +14,7 @@ export default class ProfileContainer extends React.Component {
     }
       
     async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/users/${this.props.match.params.id}`)
+        let response = await fetch(`https://api.news.lmdfoot.com/users/${this.props.match.params.id}`)
         let data = await response.json()
 
         this.setState({

@@ -16,7 +16,7 @@ export default class ListNews extends React.Component {
       }
     
       async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/articles?_limit=3`);
+        let response = await fetch(`https://api.news.lmdfoot.com/articles?_limit=3`);
         if (!response.ok) {
           return
         }

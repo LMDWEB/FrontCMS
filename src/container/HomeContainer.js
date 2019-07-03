@@ -24,7 +24,7 @@ export default class HomeContainer extends React.Component {
       }
     
     async componentDidMount() {
-        let response = await fetch(`http://localhost:1337/categories/`);
+        let response = await fetch(`https://api.news.lmdfoot.com/categories/`);
         if (!response.ok) {
           return
         }

@@ -17,9 +17,9 @@ export default class CategoryContainer extends React.Component {
 	}
 	
 	async getData(id) {
-		let response = await fetch(`http://localhost:1337/categories/`);
-		let responseID = await fetch(`http://localhost:1337/articles/?category=${id}`);
-		let resCat = await fetch(`http://localhost:1337/categories/${id}`);
+		let response = await fetch(`https://api.news.lmdfoot.com/categories/`);
+		let responseID = await fetch(`https://api.news.lmdfoot.com/articles/?category=${id}`);
+		let resCat = await fetch(`https://api.news.lmdfoot.com/categories/${id}`);
 
         if (!response.ok && !responseID.ok && !resCat.ok) {
         	return
